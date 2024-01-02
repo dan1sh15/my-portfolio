@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+.links {
+    transition: scale 0.3s linear;
+}
+
+.links:hover {
+    filter: invert(100);
+    scale: 1.1;
+    color: #fff;
+}
+
+.iconLinks {
+    transition: scale 0.3s linear;
+}
+
+.iconLinks:hover {
+    scale: 1.1;
+    background-color: #8a8a8a;
+}
+
+.textFamily {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.markText::after {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0px;
+    background-color: black;
+    transition: width 0.5s linear;
+}
+.markText:hover::after {
+    width: 100%;
+}
+
+.markTextDark::after {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0px;
+    background-color: rgb(241, 245, 249);
+    transition: width 0.5s linear;
+}
+
+.markTextDark:hover::after {
+    width: 100%;
+}
+
+.gradientBorder {
+    display: block;
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+}
+
+.customText {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    /* letter-spacing: -0.0625rem; */
+}
+
+.poppins {
+    font-family: Poppins;
+}
