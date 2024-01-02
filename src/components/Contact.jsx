@@ -45,7 +45,7 @@ const Contact = ({darkMode}) => {
     <div id='contact' className='py-10 min-h-[100vh] w-10/12 mx-auto flex flex-col gap-y-5 items-center'>
         <h1 className={`poppins font-bold max-md:text-[2rem] text-[3rem] ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"}`}>Contact</h1>
         <p className={`poppins max-md:text-[1.25rem] text-[2rem] ${darkMode ? "text-lightContent" : "text-darkContent"} font-medium uppercase`}>Get in Touch</p>
-      <form onSubmit={submitHandler} className={`flex flex-col max-md:w-11/12 w-8/12 gap-y-5 ${darkMode ? "noShadow bg-[black]" : "customShadow"} p-6`}>
+      <form onSubmit={submitHandler} className={`flex flex-col max-phone:w-full max-md:w-11/12 w-8/12 gap-y-5 ${darkMode ? "noShadow bg-[black]" : "customShadow"} p-6`}>
         <div className='flex flex-col gap-y-3'>
             <label htmlFor="name" className={`font-semibold ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"} max-md:text-base text-lg poppins`}>Your Name</label>
             <input required id="name" name='name' type="text"

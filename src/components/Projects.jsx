@@ -10,7 +10,7 @@ const Projects = ({darkMode}) => {
         <h1 className={`poppins font-bold max-md:text-[2rem] text-[3rem] ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"}`}>Projects</h1>
         <p className={`poppins max-md:text-[1.25rem] text-[2rem] ${darkMode ? "text-lightContent" : "text-darkContent"} font-medium`}>Things I've built so far</p>
 
-        <div className='flex max-lg:flex-wrap justify-around max-md:gap-3 gap-7 max-phone:flex-col max-phone:items-center'>
+        <div className='grid grid-cols-3 gap-x-10 max-ipad:grid-cols-2 max-sm:grid-cols-1 place-items-center max-md:gap-x-6 max-phone:gap-3'>
             {
                 projects.map( (project, idx) => {
                     return <ProjectCard darkMode={darkMode} key={idx} title={project.title} img={project.img} description={project.description} techStack={project.techStack} link={project.link} githubLink={project.githubLink} />

@@ -1,6 +1,8 @@
 import weather from "../assets/weather.jpg";
 import password from "../assets/password.jpg";
 import news from "../assets/quote.png";
+import quote from "../assets/quotes.jpg";
+import ticTacToe from "../assets/tic-tac-toe.jpg";
 
 const projects = [
     {
@@ -26,6 +28,22 @@ const projects = [
         link: 'https://github.com/dan1sh15/React-NewsMonkey-App',
         githubLink: 'https://github.com/dan1sh15/React-NewsMonkey-App',
         img: news,
+    },
+    {
+        title: "Quote Generator",
+        description: "This project generates random quotes on click of new quote button.",
+        techStack: "HTML, CSS and JavaScript",
+        link: "https://github.com/dan1sh15/Quote_Generator",
+        githubLink: "https://dan1sh15.github.io/Quote_Generator/",
+        img: quote,
+    }, 
+    {
+        title: "Tic Tac Toe",
+        description: "Tic Tac Toe game using HTML, CSS and JavaScript",
+        techStack: "HTML, CSS and JavaScript",
+        link: "https://dan1sh15.github.io/Tic-Tac-Toe-Game/",
+        githubLink: "https://github.com/dan1sh15/Tic-Tac-Toe-Game",
+        img: ticTacToe,
     }
 ]
 
