@@ -8,11 +8,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-
+  
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`relative box-border min-h-[100vh] w-[100%] ${darkMode ? "bg-[#191919]" : "bg-[#fff]"}`}>
+    <div
+    className={`relative box-border min-h-[100vh] w-[100%] ${darkMode ? "bg-[#191919]" : "bg-[#fff]"}`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home darkMode={darkMode} />
       <TechStack darkMode={darkMode} />

@@ -23,10 +23,10 @@ const projects = [
     },
     {
         title: "News App",
-        description: "It is modern news web application which is build by using React and Bootstrap. The news app has a navbar which helps in viewing the news according to the categories listed in it. The news is fetched from the NewsApi website.",
-        techStack: "React",
-        link: 'https://github.com/dan1sh15/React-NewsMonkey-App',
-        githubLink: 'https://github.com/dan1sh15/React-NewsMonkey-App',
+        description: "It is modern news Web Application built using React and Tailwind. The news app has a vertical navbar which helps in viewing the news according to the categories listed in it. The news is fetched from the NewsApi website. It has an infinte scroll page which is implemented by using the InfiniteScroll component. The project wasn’t hosted on any platform beacause the News Api was restricted for localhost request only.",
+        techStack: "React and Tailwind",
+        link: 'https://drive.google.com/file/d/1bEDYEcwZk8dzNaPEScedy6ucP3huytsG/view',
+        githubLink: 'https://github.com/dan1sh15/News-App',
         img: news,
     },
     {
