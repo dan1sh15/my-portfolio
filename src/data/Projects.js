@@ -3,14 +3,23 @@ import password from "../assets/password.jpg";
 import news from "../assets/quote.png";
 import quote from "../assets/quotes.jpg";
 import ticTacToe from "../assets/tic-tac-toe.jpg";
+import insta from "../assets/instagram.jpg";
 
 const projects = [
     {
+        title: "Instagram Video Downloader",
+        description: "This is a dynamic and user-friendly Instagram video downloader using React for frontend development, Tailwind CSS for styling, and Rapid API for interacting with Instagram's API. This project aims to provide a seamless experience for users to download Instagram videos with ease.",
+        techStack: "React and Tailwind",
+        link: "https://instagram-video-download.netlify.app/",
+        githubLink: "https://github.com/dan1sh15/Insta-video-downloader",
+        img: insta,
+    },
+    {
         title: "Weather App",
         description: "A Weather app which shows the weather of your current location and has a search weather option for different cities. I have used Openweather api for fetching weather data.",
-        techStack: "HTML, CSS and JavaScript",
-        link: 'https://dan1sh15.github.io/Weather-App/',
-        githubLink: 'https://github.com/dan1sh15/Weather-App',
+        techStack: "React and Tailwind",
+        link: 'https://dan1sh15.github.io/Weather-React-App/',
+        githubLink: 'https://github.com/dan1sh15/Weather-React-App',
         img: weather,
     },
     {
@@ -33,8 +42,8 @@ const projects = [
         title: "Quote Generator",
         description: "This project generates random quotes on click of new quote button.",
         techStack: "HTML, CSS and JavaScript",
-        link: "https://github.com/dan1sh15/Quote_Generator",
-        githubLink: "https://dan1sh15.github.io/Quote_Generator/",
+        link: "https://dan1sh15.github.io/Quote_Generator/",
+        githubLink: "https://github.com/dan1sh15/Quote_Generator",
         img: quote,
     }, 
     {
