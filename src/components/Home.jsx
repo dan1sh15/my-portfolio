@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 import './home.css';
 import img from "../assets/image.png";
 import resumeFile from "../assets/Resume_Danish.pdf";
 import { TypeAnimation } from 'react-type-animation';
+import "animate.css/animate.min.css";
 
 const Home = ({darkMode}) => {
-    
+   
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = resumeFile;
@@ -16,7 +17,8 @@ const Home = ({darkMode}) => {
     };
 
   return (
-    <div id='home' className='w-10/12 pt-[6.25rem] min-h-[100vh] mx-auto mb-10  flex flex-col gap-y-14 items-center justify-center'>
+    <div
+     id='home' className='w-10/12 pt-[6.25rem] min-h-[100vh] mx-auto mb-10  flex flex-col gap-y-14 items-center justify-center'>
       <div className='flex items-center max-md:flex-col h-auto  justify-between w-10/12'>
         
         <div className={` max-md:text-[1.75rem] max-md:w-full text-[2.75rem]  ${darkMode ? "text-[#D9D9D9]" : "text-black"} poppins font-bold max-md:leading-[3rem] max-md:tracking-normal leading-[4.375rem] tracking-tighter`} >

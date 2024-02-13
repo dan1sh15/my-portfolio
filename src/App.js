@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -10,6 +10,20 @@ import Footer from './components/Footer';
 function App() {
   
   const [darkMode, setDarkMode] = useState(false);
+
+  const getUserMode = () => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if(mediaQuery.matches) {
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
+  }
+
+  useEffect(() => {
+    getUserMode();
+  }, []);
 
   return (
     <div

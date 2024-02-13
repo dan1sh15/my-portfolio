@@ -1,11 +1,19 @@
 import weather from "../assets/weather.jpg";
 import password from "../assets/password.jpg";
 import news from "../assets/quote.png";
-import quote from "../assets/quotes.jpg";
 import ticTacToe from "../assets/tic-tac-toe.jpg";
 import insta from "../assets/instagram.jpg";
+import employee from "../assets/employee.png";
 
 const projects = [
+    {
+        title: "Employee Management App",
+        description: "This is a dynamic full stack web app that perform CRUD operations for employees. We can add, edit and delete employee details. The project also uses context api.",
+        techStack: "MERN and Tailwind",
+        link: "https://employeemanagement-mern.netlify.app/",
+        githubLink: "https://github.com/dan1sh15/EmployeeManagementBackend",
+        img: employee
+    },
     {
         title: "Instagram Video Downloader",
         description: "This is a dynamic and user-friendly Instagram video downloader using React for frontend development, Tailwind CSS for styling, and Rapid API for interacting with Instagram's API. This project aims to provide a seamless experience for users to download Instagram videos with ease.",
@@ -38,14 +46,6 @@ const projects = [
         githubLink: 'https://github.com/dan1sh15/News-App',
         img: news,
     },
-    {
-        title: "Quote Generator",
-        description: "This project generates random quotes on click of new quote button.",
-        techStack: "HTML, CSS and JavaScript",
-        link: "https://dan1sh15.github.io/Quote_Generator/",
-        githubLink: "https://github.com/dan1sh15/Quote_Generator",
-        img: quote,
-    }, 
     {
         title: "Tic Tac Toe",
         description: "Tic Tac Toe game using HTML, CSS and JavaScript",

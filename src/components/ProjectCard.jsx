@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
     const {title, description, techStack, link, githubLink, img} = props;
     const darkMode = props.darkMode;
   return (
-    <div className={`flex gap-3 flex-col ${darkMode ? "bg-[#363636]" : "bg-[#fff]"} items-center max-phone:w-[90%] max-sm:w-[70%] mb-7 rounded-xl ${darkMode ? "noShadow" : "customShadow"} hover:scale-[1.04] transition-all duration-300 ease-in-out`}>
+    <div className={`flex mx-auto gap-3 flex-col ${darkMode ? "bg-[#363636]" : "bg-[#fff]"} items-center max-phone:w-[90%] max-sm:w-[70%] mb-7 rounded-xl ${darkMode ? "noShadow" : "customShadow"} hover:scale-[1.04] transition-all duration-300 ease-in-out`}>
       <img className=' rounded-tl-xl rounded-tr-xl' src={img} height="40%" width="100%" alt="project" />
       <div className={`flex flex-col gap-4 poppins`} >
         <h1 className={` ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"} max-md:text-[1.25rem] text-[1.75rem] font-semibold text-center`}>{title}</h1>
