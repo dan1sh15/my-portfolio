@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 // import img from "../assets/image.png";
 import linkedin from "../assets/linkedin.svg"
 import github from "../assets/github.svg"
-import './navbar.css';
-import {AiOutlineInstagram} from "react-icons/ai";
+import './navbar.css'
 import { MdOutlineDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -12,7 +11,6 @@ import { RxCross1 } from "react-icons/rx";
 const Navbar = (props) => {
     const githubUrl = process.env.REACT_APP_GITHUB_URL;
     const linkedInUrl = process.env.REACT_APP_LINKEDIN_URL;
-    const instaUrl = process.env.REACT_APP_INSTA_URL;
 
     const darkMode = props.darkMode;
     const setDarkMode = props.setDarkMode;
@@ -66,10 +64,6 @@ const Navbar = (props) => {
 
                 <a href={linkedInUrl} target='_blank' rel='noopener noreferrer' className='links'>
                     <img src={linkedin} alt="" />
-                </a>
-
-                <a href={instaUrl} target='_blank' rel='noreferrer noopener'>
-                    <AiOutlineInstagram className={`iconLinks text-[2rem] ${darkMode ? "text-[#272727] bg-[#8d8d8de6] hover:bg-[gray]" : "text-[#fff] bg-[#686868]"} p-1 hover:cursor-pointer rounded-full `} />
                 </a>
 
                 <button onClick={clickHandler} className={`text-2xl ${darkMode ? "text-[#272727] bg-[#8d8d8de6] hover:bg-[gray]" : "text-[#fff] bg-[#686868]"} rounded-full p-[3px] hover:cursor-pointer iconLinks`}>

@@ -27,10 +27,8 @@
 }
 
 .btn {
-    font-size: 2rem;
-    border-radius: 1rem;
     color: #FFF;
-    padding: 0.5rem 2.25rem;
+
     font-family: Poppins, sans-serif;
     background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
     transition: all 0.3s linear;
@@ -46,10 +44,5 @@
         font-size: 1.75rem;
         line-height: normal;
         letter-spacing: normal  ;
-    }
-
-    .btn {
-        font-size: 1.5rem;
-        
     }
 }

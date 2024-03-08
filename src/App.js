@@ -15,7 +15,7 @@ function App() {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
     if(mediaQuery.matches) {
-      setDarkMode(true);
+      setDarkMode(true); 
     } else {
       setDarkMode(false);
     }

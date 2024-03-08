@@ -48,7 +48,7 @@ const Home = ({darkMode}) => {
 
       </div>
 
-      <button onClick={handleDownload} className='btn'>
+      <button onClick={handleDownload} className='btn px-5 py-3 text-2xl rounded-xl max-phone:text-lg max-phone:rounded-lg max-phone:p-3'>
         Download CV
       </button>
     </div>

@@ -1,17 +1,25 @@
 import weather from "../assets/weather.jpg";
 import password from "../assets/password.jpg";
 import news from "../assets/quote.png";
-import ticTacToe from "../assets/tic-tac-toe.jpg";
 import insta from "../assets/instagram.jpg";
 import employee from "../assets/employee.png";
+import notesApp from "../assets/notesApp.jpg";
 
 const projects = [
+    {
+        title: "yourNotes App",
+        description: "This is a dynamic full stack web app with encrypted login/signup functionality. The user can perform CRUD operations on his/her notes by creating his/her personal account. It also has forgot password functionality, it uses user's email to send verfication link to reset his/her password.",
+        techStack: "MERN Stack and Tailwind CSS",
+        link: "https://yournotesapp123.netlify.app/login",
+        githubLink: "https://github.com/dan1sh15/yourNotesApp-Frontend",
+        img: notesApp,
+    },
     {
         title: "Employee Management App",
         description: "This is a dynamic full stack web app that perform CRUD operations for employees. We can add, edit and delete employee details. The project also uses context api.",
         techStack: "MERN and Tailwind",
         link: "https://employeemanagement-mern.netlify.app/",
-        githubLink: "https://github.com/dan1sh15/EmployeeManagementBackend",
+        githubLink: "https://github.com/dan1sh15/EmployeeManagementFrontend",
         img: employee
     },
     {
@@ -45,14 +53,6 @@ const projects = [
         link: 'https://drive.google.com/file/d/1bEDYEcwZk8dzNaPEScedy6ucP3huytsG/view',
         githubLink: 'https://github.com/dan1sh15/News-App',
         img: news,
-    },
-    {
-        title: "Tic Tac Toe",
-        description: "Tic Tac Toe game using HTML, CSS and JavaScript",
-        techStack: "HTML, CSS and JavaScript",
-        link: "https://dan1sh15.github.io/Tic-Tac-Toe-Game/",
-        githubLink: "https://github.com/dan1sh15/Tic-Tac-Toe-Game",
-        img: ticTacToe,
     }
 ]
 
