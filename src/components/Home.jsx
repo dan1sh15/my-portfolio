@@ -12,7 +12,7 @@ const Home = ({darkMode}) => {
         link.href = resumeFile;
         link.download = 'Danish_Resume.pdf';
         document.body.appendChild(link);
-        link.click();
+        link.click(); 
         document.body.removeChild(link);
     };
 
