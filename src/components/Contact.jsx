@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from "@emailjs/browser";
 import Toast from "react-hot-toast";
 import "./home.css";
+import Loader from './Loader'
 
 const Contact = ({darkMode}) => {
 
@@ -18,7 +19,11 @@ const Contact = ({darkMode}) => {
         });
     };
 
+
+    const [loading, setLoading] = useState(false);
+
     const submitHandler = (event) => {
+        setLoading(true);
         event.preventDefault();
 
         emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, {
@@ -26,6 +31,7 @@ const Contact = ({darkMode}) => {
             email: formData.email,
             msg: formData.msg,
         }, process.env.REACT_APP_KEY).then( () => {
+            setLoading(false);
             Toast.success("Response Recieved Successfully");
             setFormData({
                 name: "",
@@ -33,12 +39,10 @@ const Contact = ({darkMode}) => {
                 msg: "",
             });
         }, (error) => {
+            setLoading(false);
             console.log(error);
             Toast.error("Something went wrong");
-        } )
-
-
-        console.log(formData);
+        });
     };
 
   return (
@@ -51,6 +55,7 @@ const Contact = ({darkMode}) => {
             <label htmlFor="name" className={`font-semibold ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"} max-md:text-base text-lg poppins`}>Your Name</label>
             <input required id="name" name='name' type="text"
                 onChange={changeHandler}
+                value={formData.name}
                 placeholder='Enter your name'
                 className={`max-md:text-base max-sm:px-2 px-4 py-2 font-medium ${darkMode ? "text-lightContent bg-[#363636]" : "text-darkContent bg-slate-200"} rounded-md outline-none`}
               />
@@ -60,6 +65,7 @@ const Contact = ({darkMode}) => {
             <label htmlFor="email" className={`font-semibold ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"} text-lg poppins max-md:text-base`}>Your Email</label>
             <input required id='email' name='email' type="email"
                 onChange={changeHandler}
+                value={formData.email}
                 placeholder='Enter Your Email'
                 className={`max-md:text-base px-4 py-2 font-medium ${darkMode ? "text-lightContent bg-[#363636]" : "text-darkContent bg-slate-200"} rounded-md outline-none`}
             />
@@ -69,13 +75,16 @@ const Contact = ({darkMode}) => {
             <label htmlFor="msg" className={` max-md:text-base font-semibold ${darkMode ? "text-[#CCCCCC]" : "text-solidHeading"} text-lg poppins`}>Your Message</label>
             <textarea required name="msg" id="msg" cols="20" rows="8"
                 onChange={changeHandler}
+                value={formData.msg}
                 placeholder='Enter your message'
                 className={`max-md:text-base px-4 py-2 font-medium ${darkMode ? "text-lightContent bg-[#363636]" : "text-darkContent bg-slate-200"} rounded-md outline-none`}
             />
         </div>
 
-        <button className={`${darkMode ? "bg-[#363636] text-[#CCCCCC] hover:bg-[#3f3f3f]" : "bg-slate-200 text-solidHeading hover:bg-slate-100"} mt-5 hover:scale-[1.04] transition-all duration-[0.3s] ease-linear  w-fit mx-auto px-4 py-2 max-md:text-base text-xl poppins rounded-lg  font-semibold`}>
-            Submit
+        <button disabled={loading} className={`${darkMode ? "bg-[#363636] text-[#CCCCCC] hover:bg-[#3f3f3f]" : "bg-slate-200 text-solidHeading hover:bg-slate-100"} mt-5 hover:scale-[1.04] transition-all duration-[0.3s] ease-linear w-[10rem] max-[300px]:w-[5rem] mx-auto px-4 py-3 max-md:text-base text-xl poppins rounded-lg  font-semibold flex items-center justify-center disabled:opacity-[0.65]`}>
+            {
+                loading ? (<Loader color={darkMode ? 'white' : 'black'} />) : ("Submit")
+            }
         </button>
       </form>
     </div>

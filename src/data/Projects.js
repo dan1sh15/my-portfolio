@@ -1,11 +1,19 @@
 import weather from "../assets/weather.jpg";
 import password from "../assets/password.jpg";
 import news from "../assets/quote.png";
-import insta from "../assets/instagram.jpg";
+import codeEditor from '../assets/codeEditor.png';
 import employee from "../assets/employee.png";
 import notesApp from "../assets/notesApp.jpg";
 
 const projects = [
+    {
+        title: "Mythical Code",
+        description: "This is a full stack online coding platform, a comprehensive code editor enabling users to solve coding problems in C++, with Python support forthcoming. Implemented a coding arena for challenges, a battleground for organizing and participating in coding contests, and a leaderboard system for tracking user rankings. Integrated real-time contest management and score tracking features.",
+        techStack: "MERN Stack and g++ compiler",
+        link: `https://mythical-code.netlify.app/`,
+        githubLink: `https://github.com/dan1sh15/Mythical-Code`,
+        img: codeEditor,
+    },
     {
         title: "yourNotes App",
         description: "This is a dynamic full stack web app with encrypted login/signup functionality. The user can perform CRUD operations on his/her notes by creating his/her personal account. It also has forgot password functionality, it uses user's email to send verfication link to reset his/her password.",
@@ -21,14 +29,6 @@ const projects = [
         link: "https://employeemanagement-mern.netlify.app/",
         githubLink: "https://github.com/dan1sh15/EmployeeManagementFrontend",
         img: employee
-    },
-    {
-        title: "Instagram Video Downloader",
-        description: "This is a dynamic and user-friendly Instagram video downloader using React for frontend development, Tailwind CSS for styling, and Rapid API for interacting with Instagram's API. This project aims to provide a seamless experience for users to download Instagram videos with ease.",
-        techStack: "React and Tailwind",
-        link: "https://instagram-video-download.netlify.app/",
-        githubLink: "https://github.com/dan1sh15/Insta-video-downloader",
-        img: insta,
     },
     {
         title: "Weather App",
