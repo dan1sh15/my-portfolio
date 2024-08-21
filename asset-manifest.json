@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5d55221a.css",
-    "main.js": "/my-portfolio/static/js/main.c4adbcc5.js",
-    "static/media/instagram.jpg": "/my-portfolio/static/media/instagram.790603f3c43a44f322be.jpg",
+    "main.css": "/my-portfolio/static/css/main.96361785.css",
+    "main.js": "/my-portfolio/static/js/main.cc849a8f.js",
+    "static/media/codeEditor.png": "/my-portfolio/static/media/codeEditor.48edc07724cb4890731f.png",
     "static/media/image.png": "/my-portfolio/static/media/image.fbeeab40c11d2b6aa53d.png",
-    "static/media/Resume_Danish.pdf": "/my-portfolio/static/media/Resume_Danish.e03835eab57719dcf8eb.pdf",
+    "static/media/Resume_Danish.pdf": "/my-portfolio/static/media/Resume_Danish.c26a55d42c70f063b18b.pdf",
     "static/media/quote.png": "/my-portfolio/static/media/quote.aa3e9d4f03ffc6d6cf94.png",
     "static/media/notesApp.jpg": "/my-portfolio/static/media/notesApp.f6411d4e0c706c2057c7.jpg",
     "static/media/password.jpg": "/my-portfolio/static/media/password.80925d5f2d9c5f07845f.jpg",
@@ -29,11 +29,11 @@
     "static/media/mongodb.svg": "/my-portfolio/static/media/mongodb.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "static/media/tailwind.svg": "/my-portfolio/static/media/tailwind.ea0e2ae07b4dc2a2d9124cd73cfa446e.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.5d55221a.css.map": "/my-portfolio/static/css/main.5d55221a.css.map",
-    "main.c4adbcc5.js.map": "/my-portfolio/static/js/main.c4adbcc5.js.map"
+    "main.96361785.css.map": "/my-portfolio/static/css/main.96361785.css.map",
+    "main.cc849a8f.js.map": "/my-portfolio/static/js/main.cc849a8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d55221a.css",
-    "static/js/main.c4adbcc5.js"
+    "static/css/main.96361785.css",
+    "static/js/main.cc849a8f.js"
   ]
 }
